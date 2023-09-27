@@ -91,17 +91,15 @@ function SignUp() {
       return;
     }
     if (password !== confirmPassword) {
-      {
-        toast({
-          title: "Passwords Do Not Match",
-          description: "Passwords Do Not Match.",
-          status: "warning",
-          duration: 5000,
-          isClosable: true,
-          position: "top",
-        });
-        return;
-      }
+      toast({
+        title: "Passwords Do Not Match",
+        description: "Passwords Do Not Match.",
+        status: "warning",
+        duration: 5000,
+        isClosable: true,
+        position: "top",
+      });
+      return;
     }
 
     try {
