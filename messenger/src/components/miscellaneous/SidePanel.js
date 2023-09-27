@@ -332,7 +332,7 @@ function SidePanel(props) {
                   <BellIcon fontSize="2xl" m={1}></BellIcon>
                 </MenuButton>
                 <MenuList pl={2}>
-                  {console.log(notification)}
+                  {/* {console.log(notification)} */}
                   {!notification.length && "No New Messages"}
                   {notification.map((notif) => (
                     <MenuItem
