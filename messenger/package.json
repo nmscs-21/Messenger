@@ -1,6 +1,7 @@
 {
   "name": "messenger",
   "version": "0.1.0",
+  "homepage": "https://messenger-y472.onrender.com/",
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {

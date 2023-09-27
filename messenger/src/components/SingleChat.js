@@ -21,7 +21,7 @@ import TypingAnim from "../animations/TypingAnim";
 import { formatText } from "./formatText";
 import Scroll from "./Scroll";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://messenger-y472.onrender.com";
 var socket, selectedChatCompare;
 
 function SingleChat({ fetchAgain, setFetchAgain, ai }) {
