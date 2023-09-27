@@ -1,0 +1,33 @@
+.typing-indicator {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
+  color: white; /* Text color */
+  display: inline-block; /* Make it an inline-block element */
+  /* border: 1px solid #5e169d; Add a border around the element */
+  background-color: #a882eb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styling for the dots */
+.typing-indicator::after {
+  content: "";
+  animation: typingDots 1s infinite;
+}
+
+@keyframes typingDots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80% {
+    content: "...";
+  }
+}
