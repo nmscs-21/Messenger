@@ -13,7 +13,7 @@ const TypingAnim = () => {
           return prevDots + ".";
         }
       });
-    }, 500); // Adjust the interval as needed
+    }, 500);
 
     return () => {
       clearInterval(interval);

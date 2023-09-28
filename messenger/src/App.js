@@ -4,8 +4,6 @@ import HomePage from "./components/HomePage";
 import ChatPage from "./components/ChatPage";
 import AIChatPage from "./components/AIChatPage";
 
-// import Navbar from "./components/Navbar";
-
 function App() {
   return (
     <div className="App">

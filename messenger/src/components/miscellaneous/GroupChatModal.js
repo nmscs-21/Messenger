@@ -56,13 +56,13 @@ function GroupChatModal({ children }) {
         isClosable: true,
         position: "bottom-left",
       });
+      setLoading(false);
     }
   };
   const handleSubmit = expressAsyncHandler(async () => {
     if (!groupChatName || !selectedUsers) {
       toast({
         title: "Please Fill all the Feilds",
-        // description: "Failed to Load the Search Results",
         status: "warning",
         duration: 5000,
         isClosable: true,
@@ -91,7 +91,7 @@ function GroupChatModal({ children }) {
       onClose();
       toast({
         title: "New Group Chat Created!",
-        // description: "Failed to Load the Search Results",
+        // description: "New Group Chat Created!",
         status: "success",
         duration: 5000,
         isClosable: true,
@@ -112,7 +112,7 @@ function GroupChatModal({ children }) {
     if (selectedUsers.includes(userToAdd)) {
       toast({
         title: "User Already Added",
-        // description: "Failed to Load the Search Results",
+        // description: "User already added",
         status: "warning",
         duration: 5000,
         isClosable: true,

@@ -50,7 +50,6 @@ function SidePanel(props) {
   const navigate = useNavigate();
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const btnRef = React.useRef();
 
   const toast = useToast();
 
@@ -139,7 +138,6 @@ function SidePanel(props) {
   });
 
   const accessChat = (recId) => {
-    // try {
     setLoadingChat(true);
     // console.log("Set the loading to true");
 
@@ -164,31 +162,10 @@ function SidePanel(props) {
 
     if (!existingChat) createNewChat(recId);
     else {
-      // setSelectedChat(existingChat);
-      // Check if existingChat has the _id property before accessing it
-      // console.log("Entered existing part");
-      // if (existingChat._id) {
-
       setSelectedChat(existingChat);
-      // } else {
-      // Handle the case where _id is undefined
-      // console.error("existingChat does not have _id property");
-      // You may want to handle this error gracefully
-      // }
     }
     setLoadingChat(false);
     onClose();
-    // } catch (error) {
-    //   toast({
-    //     title: "Error Fetching the data",
-    //     description: error.message,
-    //     status: "error",
-    //     duration: 5000,
-    //     isClosable: true,
-    //     position: "bottom-left",
-    //   });
-    //   return;
-    // }
   };
 
   return (
@@ -202,10 +179,7 @@ function SidePanel(props) {
         p="5px 10px 5px 10px"
         borderWidth="5px"
       >
-        {/* <Text fontSize="2xl" fontFamily="Work Sans">
-          Messenger
-        </Text> */}
-
+        {/* Normal Component */}
         {!props.ai && (
           <>
             <Tooltip
@@ -288,7 +262,7 @@ function SidePanel(props) {
             </div>
           </>
         )}
-
+        {/* AI component */}
         {props.ai && (
           <>
             <Image

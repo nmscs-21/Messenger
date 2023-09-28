@@ -8,16 +8,6 @@ function ChatBox({ fetchAgain, setFetchAgain, ai }) {
 
   return (
     <Box
-      // display={{ base: selectedChat ? "flex" : "none", md: "flex" }}
-      // alignItems="center"
-      // flexDir="column"
-      // p={3}
-      // bg="white"
-      // w={{ base: "100%", md: "68%" }}
-      // justifyContent={ai ? "center" : "flex-start"}
-      // borderRadius="lg"
-      // borderWidth="1px"
-      // display={{ base: selectedChat ? "flex" : "none", md: "flex" }}
       display={{
         base: ai ? "flex" : selectedChat ? "flex" : "none",
         md: ai ? "flex" : "flex",

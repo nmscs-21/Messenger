@@ -38,6 +38,7 @@ function SignUp() {
         isClosable: true,
         position: "top",
       });
+      setLoading(false);
       return;
     }
 
@@ -49,9 +50,6 @@ function SignUp() {
       fetch("https://api.cloudinary.com/v1_1/dwwunccsb/image/upload", {
         method: "post",
         body: data,
-        // headers: {
-        //   Authorization: `Bearer 371445431359163`,
-        // },
       })
         .then((res) => res.json())
         .then((data) => {
@@ -99,6 +97,7 @@ function SignUp() {
         isClosable: true,
         position: "top",
       });
+      setLoading(false);
       return;
     }
 
